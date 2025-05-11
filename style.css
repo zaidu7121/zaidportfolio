@@ -464,3 +464,91 @@ footer .container {
 
 #btn-back-to-top:hover {
     background-color: #333;}
+/* Grid Layout for about section */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 cards per row */
+  gap: 25px; /* Space between items */
+  margin-top: 40px;
+  justify-items: center;
+  width: 100%;  /* Ensures it takes the full width of the container */
+  grid-auto-rows: auto; /* Allow rows to adjust to content size */
+  /* Ensure the grid behaves responsively */
+}
+
+/* For tablets, 2 cards per row */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+/* For mobile devices, 1 card per row */
+@media (max-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+}
+
+/* Styling for individual cards */
+.about-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 250px;  /* Card width cap */
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Hover effect for the card */
+.about-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px rgba(31, 165, 248, 0.4);
+}
+
+/* Icon inside the card */
+.about-card .icon {
+  font-size: 2em;
+  color: #1fa5f8;
+  margin-bottom: 10px;
+  background: #e6f0ff;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Hover effect for icon inside card */
+.about-card:hover .icon {
+  background: #1fa5f8;
+  color: white;
+}
+
+/* Card heading */
+.about-card h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #142333;
+  font-weight: bold;
+}
+
+/* Card paragraph */
+.about-card p {
+  font-size: 0.95rem;
+  color: #555;
+  word-break: break-word;
+}
+
+
+
+
+
+
