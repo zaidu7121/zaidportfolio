@@ -424,4 +424,42 @@ footer .container {
 .hover-item:hover i, .hover-item:hover img {
   transform: rotate(15deg); /* Add rotation to the icon/image */
 }
+/* Default desktop view (transparent navbar) */
+.custom-navbar {
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.custom-navbar .navbar-brand, 
+.custom-navbar .nav-link {
+  color: white; /* White color for text in transparent navbar */
+}
+
+/* Scroll hone par (desktop mein) navbar ka background blue ho jayega */
+.custom-navbar.scrolled {
+  background-color: #1fa5f8; /* Blue color when scrolled */
+}
+
+.custom-navbar.scrolled .navbar-brand, 
+.custom-navbar.scrolled .nav-link {
+  color: white; /* Keep text white when navbar is blue */
+}
+
+/* Mobile view ke liye (max-width 600px) */
+@media (max-width: 600px) {
+  /* Mobile mein navbar ka background hamesha blue ho */
+  .custom-navbar {
+    background-color: #1fa5f8 !important; /* Blue background on mobile */
+  }
+
+  .custom-navbar .navbar-brand, 
+  .custom-navbar .nav-link {
+    color: white !important; /* White text color for contrast */
+  }
+
+  /* Mobile mein scroll hone par koi effect nahi hoga */
+  .custom-navbar.scrolled {
+    background-color: #1fa5f8 !important; /* Blue background, same as default */
+  }
+}
 
