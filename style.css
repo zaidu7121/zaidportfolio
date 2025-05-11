@@ -462,6 +462,8 @@ footer .container {
     background-color: #1fa5f8 !important; /* Blue background, same as default */
   }
 }
+
+/* Style for the scroll to top button */
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
