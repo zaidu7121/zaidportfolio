@@ -154,43 +154,45 @@
   </section>
 
   <!-- Contact Section -->
-
-    <!-- Contact Section -->
-<section id="contact" class="contact section reveal">
-  <div class="container">
-    <h2>Contact</h2>
-    <p class="contact-intro">Let’s Start A New Project</p>
-
-    <!-- Contact Form -->
-    <form id="contact-form" action="https://formspree.io/f/manodepp" method="POST">
-      <!-- Name Field -->
-      <div class="input-group">
-        <label for="name"></label>
-        <input type="text" id="name" name="name" required placeholder="Full name">
-      </div>
-
-      <!-- Email Field -->
-      <div class="input-group">
-        <label for="email"></label>
-        <input type="email" id="email" name="email" required placeholder="Email Address">
-      </div>
- <!-- Mobile Number Field -->
-<div class="input-group">
-  <label for="number"></label>
-  <input type="tel" id="number" name="number" required placeholder="Phone Number" maxlength="12" pattern="\d{12}" />
+  <section id="contact" class="contact section reveal">
+    <div class="container">
+      <!-- <h2>Contact</h2> -->
+      <!-- <p class="contact-intro">Let’s Start A New Project</p> -->
+      <div class="contact-container">
+        <div class="contact-form">
+          <h3>Get in touch</h3>
+          <form id="contact-form" action="https://formspree.io/f/manodepp" method="POST">
+            <div class="form-row">
+              <input type="text" id="name" name="name" required placeholder="Name">
+              <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+            <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+     <div class="contact-info">
+  <h3>Contact us</h3>
+ <div class="info-item">
+  <div class="icon"><i class="fas fa-phone-alt"></i></div>
+  <p><a href="tel:+917082239463">+91-7082239463</a></p>
 </div>
-
-      <!-- Message Field -->
-      <div class="input-group">
-        <label for="message"></label>
-        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+<div class="info-item">
+  <div class="icon"><i class="fas fa-envelope"></i></div>
+  <p><a href="mailto:mdzaidbxr@gmail.com">zaidrxb@gmail.com</a></p>
+</div>
+<div class="info-item">
+  <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+  <p><a href="https://maps.google.com?q=New+Delhi+India" target="_blank">New Delhi, India</a></p>
+</div>
+          <div class="info-item">
+            <!-- <span class="icon"><i class="fas fa-globe"></i></span>
+            <p>Website: yoursite.com</p> -->
+          </div>
+        </div>
       </div>
-
-      <!-- Submit Button -->
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
+    </div>
+  </section>
 
 
 
