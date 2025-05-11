@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Navbar color change on scroll
 window.onscroll = function () {
     changeNavbarColor();
+    scrollFunction(); // Handle both navbar color and scroll-to-top button
 };
 
 function changeNavbarColor() {
@@ -92,54 +93,52 @@ function changeNavbarColor() {
         navbar.classList.remove('scrolled');
     }
 }
+
 function downloadAndOpenPDF() {
-  const fileUrl = 'assets/MD.ZAID QA.pdf'; // Adjust path if needed
+    const fileUrl = 'assets/MD.ZAID QA.pdf'; // Adjust path if needed
 
-  // Create a hidden link to trigger the download
-  const downloadLink = document.createElement('a');
-  downloadLink.href = fileUrl;
-  downloadLink.download = 'Md_Zaid_Resume.pdf'; // Optional custom name
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-  document.body.removeChild(downloadLink);
+    // Create a hidden link to trigger the download
+    const downloadLink = document.createElement('a');
+    downloadLink.href = fileUrl;
+    downloadLink.download = 'Md_Zaid_Resume.pdf'; // Optional custom name
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
 
-  // Delay and open the PDF in a new tab
-  setTimeout(() => {
-    window.open(fileUrl, '_blank');
-  }, 1000); // Delay 1 second to let download start
+    // Delay and open the PDF in a new tab
+    setTimeout(() => {
+        window.open(fileUrl, '_blank');
+    }, 1000); // Delay 1 second to let download start
 }
+
 // Adding animation on hover using JavaScript
 document.querySelectorAll('.hover-item').forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    item.style.transform = 'scale(1.1)';
-    item.style.color = '#3498db'; // Change color on hover
-  });
+    item.addEventListener('mouseenter', () => {
+        item.style.transform = 'scale(1.1)';
+        item.style.color = '#3498db'; // Change color on hover
+    });
 
-  item.addEventListener('mouseleave', () => {
-    item.style.transform = 'scale(1)';
-    item.style.color = '#333'; // Reset color on hover out
-  });
+    item.addEventListener('mouseleave', () => {
+        item.style.transform = 'scale(1)';
+        item.style.color = '#333'; // Reset color on hover out
+    });
 });
-/// Get the button
+
+// Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block"; // Show the button
-  } else {
-    mybutton.style.display = "none"; // Hide the button
-  }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block"; // Show the button
+    } else {
+        mybutton.style.display = "none"; // Hide the button
+    }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 
 function backToTop() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
