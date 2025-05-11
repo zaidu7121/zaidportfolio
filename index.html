@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD.Zaid | QA Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Favicon -->
+  <link rel="icon" href="assets/Mlogo.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/Mlogo.jpg" alt="Logo" style="height: 50px; margin-right: 10px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/MD.ZAID QA.pdf" onclick="downloadAndOpenPDF() "download title="Download Resume">
+              <i class="fas fa-download"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <img src="assets/md-zaid.jpg" alt="MD Zaid" class="profile-img" />
+      <h1>Md. Zaid</h1>
+      <p><span id="typed-text"></span></p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/imzaid/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/zaidu7121" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/imzaid_k/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/yourusername" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="about section reveal">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a QA Engineer with 3 years of experience in manual and automation testing, skilled in Selenium, JIRA, and Postman, focused on delivering high-quality software. Additionally, I serve as a Project Coordinator, managing timelines and ensuring smooth collaboration between teams for successful project delivery. My approach combines effective communication, process optimization, and continuous learning to enhance both quality and productivity.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="skills section reveal">
+  <div class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li class="hover-item"><i class="fa-brands fa-java"></i>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Java</span></li>
+      <li class="hover-item"><i class="fa-brands fa-js"></i>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Javascript</span></li>
+      <li class="hover-item"><img src="assets/Selenium_Logo.png" alt="Selenium" style="width: 20px; height: 20px; vertical-align: middle;"/>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Selenium</span></li>
+      <li class="hover-item"><i class="fa-brands fa-git"></i> <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Git</span></li>
+      <li class="hover-item"><i class="fa-brands fa-jira"></i>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Jira</span></li>
+      <li class="hover-item"><img src="assets/postmen.png" alt="Postman" style="width: 20px; height: 20px; vertical-align: middle;"/>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Postman</span></li>
+      <li class="hover-item"><img src="assets/redmine.png" alt="Redmine" style="width: 20px; height: 20px; vertical-align: middle;"/>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Redmine</span></li>
+      <li class="hover-item"><img src="assets/restassured.png" alt="RestAssured" style="width: 20px; height: 20px; vertical-align: middle;"/> <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">RestAssured</span></li>
+      <li class="hover-item"><img src="assets/testrail.jpg" alt="Testrail" style="width: 20px; height: 20px; vertical-align: middle;"/>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Testrail</span></li>
+      <li class="hover-item">
+          <img src="https://jmeter.apache.org/images/logo.svg" alt="JMeter Logo" style="width: 50px; height: auto; vertical-align: middle;" />
+          <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">JMeter</span>
+      </li>
+      <li class="hover-item"><img src="assets/Zephyr.jpg" alt="Zephyr" style="width: 20px; height: 20px; vertical-align: middle;"/>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Zephyr</span></li>
+      <li class="hover-item"><img src="https://appium.io/docs/en/latest/assets/images/appium-logo-white.png" alt="Appium" style="width: 20px; height: 20px; vertical-align: middle;"/>  <span style="font-size: 15px; font-weight: bold; color: #333; margin-left: 10px;">Appium</span></li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section reveal">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Automated Web Testing Suite</h3>
+        <p>Developed a comprehensive Selenium-based framework for automating regression tests, reducing manual testing time by 50%.</p>
+      </div>
+      <div class="project">
+        <h3>API Testing Automation</h3>
+        <p>Implemented automated API tests using Postman and Newman, ensuring robust backend services with minimal manual intervention.</p>
+      </div>
+      <div class="project">
+        <h3>CI/CD Pipeline Automation</h3>
+        <p>Designed and implemented a CI/CD pipeline using Jenkins and Docker, automating deployment processes and ensuring faster release cycles.</p>
+      </div>
+      <div class="project">
+        <h3>Test Automation Framework for E-commerce Platform</h3>
+        <p>Created a robust test automation framework for an e-commerce website, integrating Selenium, TestNG, and Page Object Model (POM) to ensure reliable product functionality and performance.</p>
+      </div>
+      <div class="project">
+        <h3>Performance Testing for Web Applications</h3>
+        <p>Conducted performance testing for multiple web applications using JMeter, identifying bottlenecks and improving page load times by 30%.</p>
+      </div>
+      <div class="project">
+        <h3>Mobile App Automation Testing</h3>
+        <p>Developed and maintained mobile automation tests using Appium for both Android and iOS apps, ensuring cross-platform compatibility and reducing regression testing time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+
+    <!-- Contact Section -->
+<section id="contact" class="contact section reveal">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="contact-intro">Feel free to reach out for any questions, opportunities, or collaborations. I'm happy to connect!</p>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="https://formspree.io/f/manodepp" method="POST">
+      <!-- Name Field -->
+      <div class="input-group">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" required placeholder="Full name">
+      </div>
+
+      <!-- Email Field -->
+      <div class="input-group">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" required placeholder="Email Address">
+      </div>
+ <!-- Mobile Number Field -->
+<div class="input-group">
+  <label for="number"></label>
+  <input type="tel" id="number" name="number" required placeholder="Phone Number" maxlength="12" pattern="\d{12}" />
+</div>
+
+      <!-- Message Field -->
+      <div class="input-group">
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 MD Zaid. All rights reserved.</p>
+      <div id="footer-social-icons"></div> <!-- Empty container for social icons -->
+    </div>
+  </footer>
+
+  <!-- Include script.js -->
+   <script>window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".custom-navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+  </script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
